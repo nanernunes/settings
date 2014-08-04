@@ -6,6 +6,7 @@
 	
 	"ignored_packages": [],
 	"vintage_start_in_command_mode": true,
+	"always_prompt_for_file_reload": true,
 
 	"highlight_line": true, 
 	"caret_style": "phase",
