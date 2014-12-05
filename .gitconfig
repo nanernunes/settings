@@ -7,3 +7,4 @@
 
 [alias]
   review = log --oneline master..
+  sdiff  = diff --cached
