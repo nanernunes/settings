@@ -1,0 +1,9 @@
+[user]
+  name  = 
+  email = 
+  
+[merge]
+  tool  = p4merge
+
+[alias]
+  review = log --oneline master..
