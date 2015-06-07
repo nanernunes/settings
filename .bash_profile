@@ -1,7 +1,8 @@
 alias ls='ls -G'
 alias ll='ls -l'
 
-source /usr/local/etc/bash_completion
+source /usr/local/etc/bash_completion # OSX
+#source /usr/share/git-core/contrib/completion/git-prompt.sh # Linux
 
 R='\[\033[0m\]'
 LGREEN='\[\033[01;32m\]'
