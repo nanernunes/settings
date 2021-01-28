@@ -21,5 +21,11 @@ defaults write com.apple.Terminal "Startup Window Settings" -string "Novel"
 defaults write com.apple.Terminal "Default Window Settings" -string "Novel"
 
 
+# Applications - Safari - Enable Backspace key as Previous Page
+defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2BackspaceKeyNavigationEnabled -bool true
+
 # Applications - SublimeText 3 - Change Font Family, Size, Theme, Enable VIM mode and phase
 cp -rf apps/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings
+
+# Applications - Google Chrome - Bring up Chrome Extensions via ⌘E (Window → Extensions)
+# /usr/libexec/PlistBuddy -c 'Set :NSUserKeyEquivalents:Extensions string @$e' ~/Library/Preferences/com.google.Chrome.plist

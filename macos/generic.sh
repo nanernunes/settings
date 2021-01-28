@@ -2,7 +2,7 @@
 defaults write -g AppleShowAllExtensions -bool true
 
 # Finder - Show Hidden Files
-# defaults write com.apple.finder AppleShowAllFiles true
+defaults write com.apple.finder AppleShowAllFiles true
 
 # Finder - Disable .DS_Store File Creation
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
@@ -18,12 +18,14 @@ defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
 defaults write com.apple.finder WarnOnEmptyTrash -bool false
 
 
-# Desktop - Menu bar - Add Battery, Bluetooth and Volume icons
-# defaults write com.apple.systemuiserver menuExtras -array \
-#     "/System/Library/CoreServices/Menu Extras/Battery.menu" \
-#     "/System/Library/CoreServices/Menu Extras/Bluetooth.menu" \
-#     "/System/Library/CoreServices/Menu Extras/Volume.menu" \
-#     "/System/Library/CoreServices/Menu Extras/Displays.menu"
+# Desktop - Menu bar - Add Battery, Bluetooth and Other icons
+defaults write com.apple.systemuiserver menuExtras -array     \
+    "/System/Library/CoreServices/Menu Extras/Battery.menu"   \
+    "/System/Library/CoreServices/Menu Extras/Clock.menu"     \
+    "/System/Library/CoreServices/Menu Extras/Volume.menu"    \
+    "/System/Library/CoreServices/Menu Extras/Bluetooth.menu" \
+    "/System/Library/CoreServices/Menu Extras/Displays.menu"  \
+    "/System/Library/CoreServices/Menu Extras/User.menu"
 
 # Desktop - Menu bar - Show battery percentage
 defaults write com.apple.menuextra.battery ShowPercent -bool true
@@ -80,10 +82,3 @@ defaults write NSGlobalDomain AppleLocale -string "en_US"
 defaults write NSGlobalDomain AppleMeasurementUnits -string "Centimeters"
 defaults write NSGlobalDomain AppleTemperatureUnit -string "Celsius"
 defaults write NSGlobalDomain AppleICUForce12HourTime -bool false
-
-
-# Applications - Safari - Enable Backspace key as Previous Page
-# defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2BackspaceKeyNavigationEnabled -bool true
-
-# Applications - Google Chrome - Bring up Chrome Extensions via ⌘E (Window → Extensions)
-# /usr/libexec/PlistBuddy -c 'Set :NSUserKeyEquivalents:Extensions string @$e' ~/Library/Preferences/com.google.Chrome.plist
