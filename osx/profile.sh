@@ -4,7 +4,7 @@ defaults write -g AppleShowAllExtensions -bool true
 # Finder - Show Hidden Files
 defaults write com.apple.finder AppleShowAllFiles true
 
-# Finder - Advanced Option: Disable .DS_Store File Creation
+# Finder - Disable .DS_Store File Creation
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
 
@@ -39,7 +39,7 @@ defaults -currentHost write -globalDomain com.apple.mouse.tapBehavior -int 0
 # Trackpad - Disable Force Click Context Menu
 defaults write NSGlobalDomain com.apple.trackpad.forceClick -int 0
 
-# Trackpad: enable right click with two fingers
+# Trackpad: Enable right click with two fingers
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadRightClick -bool true
 defaults write com.apple.AppleMultitouchTrackpad TrackpadRightClick -bool true
 defaults -currentHost write NSGlobalDomain com.apple.trackpad.enableSecondaryClick -bool true

@@ -1,5 +1,5 @@
-# Mouse - Change the Mouse to Unatural Move
-defaults write -g com.apple.swipescrolldirection -bool FALSE
+# Mouse - Change the Mouse to Unnatural Move
+defaults write -g com.apple.swipescrolldirection -bool false
 
 
 # Keyboard - Shortcuts - Input Source - Next Language to "⌘ + Space"
