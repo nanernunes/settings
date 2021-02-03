@@ -2,7 +2,7 @@
 defaults write -g AppleShowAllExtensions -bool true
 
 # Finder - Show Hidden Files
-defaults write com.apple.finder AppleShowAllFiles true
+defaults write com.apple.finder AppleShowAllFiles -bool true
 
 # Finder - Disable .DS_Store File Creation
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
@@ -32,14 +32,17 @@ defaults write com.apple.menuextra.battery ShowPercent -bool true
 
 
 # Settings - Screen Saver - Require password after sleep/screen saver
-defaults write com.apple.screensaver askForPassword -int 1
+defaults write com.apple.screensaver askForPassword -bool true
+
+# Settings - Screen Saver - Require the password immediately
+
 
 
 # Trackpad - Tap to Click
-defaults -currentHost write -globalDomain com.apple.mouse.tapBehavior -int 0
+defaults -currentHost write -globalDomain com.apple.mouse.tapBehavior -bool false
 
 # Trackpad - Disable Force Click Context Menu
-defaults write NSGlobalDomain com.apple.trackpad.forceClick -int 0
+defaults write NSGlobalDomain com.apple.trackpad.forceClick -bool false
 
 # Trackpad: Enable right click with two fingers
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadRightClick -bool true
@@ -53,6 +56,9 @@ defaults write -g KeyRepeat -int 2
 
 # Keyboard - Initial Repeat (default 15 - 225ms)
 defaults write -g InitialKeyRepeat -int 15
+
+# Keyboard - Automatically switch to a document's input source
+defaults write com.apple.HIToolbox AppleGlobalTextInputProperties TextInputGlobalPropertyPerContextInput -bool true
 
 # Keyboard - Disables auto capitalization
 defaults write NSGlobalDomain NSAutomaticCapitalizationEnabled -bool false

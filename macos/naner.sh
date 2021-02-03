@@ -15,6 +15,8 @@ defaults write com.apple.dock orientation -string left
 # Desktop - Auto-hide the Dock
 defaults write com.apple.dock autohide -bool true
 
+# Desktop - Minimize Windows Using Scale Effect
+#
 
 # Terminal - Use Novel Theme
 defaults write com.apple.Terminal "Startup Window Settings" -string "Novel"
@@ -27,5 +29,14 @@ defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebK
 # Applications - SublimeText 3 - Change Font Family, Size, Theme, Enable VIM mode and phase
 cp -rf apps/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings
 
-# Applications - Google Chrome - Bring up Chrome Extensions via ⌘E (Window → Extensions)
-# /usr/libexec/PlistBuddy -c 'Set :NSUserKeyEquivalents:Extensions string @$e' ~/Library/Preferences/com.google.Chrome.plist
+# Applications - Spectacle - Set the Window Shortcuts
+cp -rf apps/Shortcuts.json ~/Library/Application\ Support/Spectacle/Shortcuts.json
+
+# Applications - Google Chrome - Set as the default Browser
+#
+
+# Applications - Spotify - High Bitrate Quality
+#
+
+# Applications - Telegram - Change the Chat Wallpaper
+#
