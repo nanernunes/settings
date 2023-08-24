@@ -77,6 +77,7 @@ defaults write -g NSAutomaticSpellingCorrectionEnabled -bool false
 
 # Keyboard - Disable Hold Key and Suggestions
 defaults write -g ApplePressAndHoldEnabled -bool false
+defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
 
 # Keyboard - Enable Dialog Controls with Tabs
 defaults write NSGlobalDomain AppleKeyboardUIMode -int 2
